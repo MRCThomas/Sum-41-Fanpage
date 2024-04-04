@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Exo+2:200i');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     /* Set neon color */
     --neon-text-color: #f40;
@@ -63,6 +69,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .biography-section p{
+        word-wrap: break-word;
+    }
     .hero-banner img {
         height: 50vh;
         object-position: center bottom;
@@ -72,19 +81,15 @@
 .fa-solid.fa-chevron-down {
     position: absolute;
     bottom: 10px;
-    /* Ajustez cette valeur selon vos besoins */
     left: 50%;
-    /* Pour le positionner au centre horizontalement */
     transform: translateX(-50%);
-    /* Pour centrer parfaitement */
     font-size: 2em;
-    /* Ajustez cette valeur selon vos besoins */
     color: white;
 }
 
 /* ----------------------- BIOGRAPHY ----------------------- */
 .biography-section .row {
-    --bs-gutter-x: 0rem !important;
+    /* --bs-gutter-x: 0rem !important; */
 }
 
 h2 {
