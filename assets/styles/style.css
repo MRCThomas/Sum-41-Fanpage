@@ -158,3 +158,12 @@ h4 {
 .row.gallery_row {
   --bs-gutter-x: 0rem !important;
 }
+
+@media screen and (min-width: 360px) and (max-width: 966px) {
+  .gallery-container-fluid {
+    display: none;
+  }
+  .gallery-text {
+    display: none;
+  }
+}
