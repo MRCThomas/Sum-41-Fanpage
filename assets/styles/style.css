@@ -15,7 +15,7 @@
 }
 
 body {
-  background: #161616;
+  background: #161616 !important;
 }
 
 h4 {
@@ -163,14 +163,21 @@ h4 {
   --bs-gutter-x: 0rem !important;
 }
 
-@media screen and (min-width: 360px) and (max-width: 966px) {
-  .gallery-container-fluid {
-    display: none;
+@media screen and (min-width: 100px) and (max-width: 966px) {
+    .iframe {
+      height: 200px;
+      width: 300px;
+    }
   }
-  .gallery-text {
-    display: none;
+  
+  @media screen and (min-width: 0px) and (max-width: 966px) {
+    .gallery-container-fluid {
+      display: none;
+    }
+    .gallery-text {
+      display: none;
+    }
   }
-}
 
 /* ----------------------- NAVBAR ----------------------- */
 .btn-custom {
@@ -252,7 +259,7 @@ h2 {
     font-size: 13rem;
     font-weight: 200;
     font-style: italic;
-    color: #fff;
+    color: #fff !important;
     padding: 2rem 3rem 2rem 2rem;
     border: 0.4rem solid #fff;
     border-radius: 2rem;
